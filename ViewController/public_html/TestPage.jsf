@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+        xmlns:h="http://java.sun.com/jsf/html" xmlns:dvt="http://xmlns.oracle.com/dss/adf/faces">
+    <af:document title="TestPage.jsf" id="d1">
+        <af:messages id="m1"/>
+        <af:form id="f1">
+            <af:panelDashboard id="pd1" columns="1" rowHeight="500px">
+                <af:panelBox text="Diagramm Test" id="pb1">
+                    <f:facet name="toolbar"/>
+                    <dvt:barChart id="barChart1" var="row" value="#{bindings.GehaltJobsNation1.collectionModel}"
+                                  orientation="horizontal">
+                        <dvt:chartLegend id="cl1"/>
+                        <f:facet name="dataStamp">
+                            <dvt:chartDataItem id="di1" series="#{row.DepartmentName}" value="#{row.Salary}"
+                                               group="#{row.City}"/>
+                        </f:facet>
+                    </dvt:barChart>
+                </af:panelBox>
+                <af:panelBox text="Button Test" id="pb2">
+                    <f:facet name="toolbar"/>
+                    <h:commandButton value="Test" id="cb1" action="go HR"/>
+                </af:panelBox>
+            </af:panelDashboard>
+        </af:form>
+    </af:document>
+</f:view>

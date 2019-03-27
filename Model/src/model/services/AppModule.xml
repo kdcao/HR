@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="AppModule"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge"
+  ComponentClass="model.services.AppModuleImpl"
+  ClearCacheOnRollback="true">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <ViewUsage
+    Name="DepartmentsView1"
+    ViewObjectName="model.queries.DepartmentsView"/>
+  <ViewUsage
+    Name="EmployeesView1"
+    ViewObjectName="model.queries.EmployeesView"/>
+  <ViewUsage
+    Name="DepartmentsView2"
+    ViewObjectName="model.queries.DepartmentsView"/>
+  <ViewUsage
+    Name="EmployeesView2"
+    ViewObjectName="model.queries.EmployeesView"/>
+  <ViewUsage
+    Name="EmployeesView3"
+    ViewObjectName="model.queries.EmployeesView"/>
+<ViewUsage
+    Name="OrtAbteilung1"
+    ViewObjectName="model.queries.OrtAbteilung"/>
+  <ViewUsage
+    Name="GehaltBerufung1"
+    ViewObjectName="model.queries.GehaltBerufung"/>
+  <ViewUsage
+    Name="GehaltJobsNation1"
+    ViewObjectName="model.queries.GehaltJobsNation"/>
+  <ViewLinkUsage
+    Name="DeptMgrFkLink1"
+    ViewLinkObjectName="model.queries.links.DeptMgrFkLink"
+    SrcViewUsageName="model.services.AppModule.EmployeesView1"
+    DstViewUsageName="model.services.AppModule.DepartmentsView2"
+    Reversed="false"/>
+  <ViewLinkUsage
+    Name="EmpManagerFkLink1"
+    ViewLinkObjectName="model.queries.links.EmpManagerFkLink"
+    SrcViewUsageName="model.services.AppModule.EmployeesView1"
+    DstViewUsageName="model.services.AppModule.EmployeesView2"
+    Reversed="false"/>
+  <ViewLinkUsage
+    Name="EmpDeptFkLink1"
+    ViewLinkObjectName="model.queries.links.EmpDeptFkLink"
+    SrcViewUsageName="model.services.AppModule.DepartmentsView1"
+    DstViewUsageName="model.services.AppModule.EmployeesView3"
+    Reversed="false"/>
+</AppModule>

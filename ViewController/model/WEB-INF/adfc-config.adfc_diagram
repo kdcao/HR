@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View8">
+      <property
+         name="activityId">HR</property>
+      <property
+         name="x">423.5</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>HR&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">370.09766</property>
+      <property
+         name="page">/HR.jsf</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <View
+      id="View9">
+      <property
+         name="activityId">TestPage</property>
+      <property
+         name="x">646.5</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>TestPage&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">368.39648</property>
+      <property
+         name="page">/TestPage.jsf</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase11"
+      from="View9"
+      to="View8">
+      <property
+         name="fromOutcome">go HR</property>
+      <property
+         name="sdm:polyPoints">L50,605.5,368.0459,464.5,369.74707,R50</property>
+   </ControlFlowCase>
+</SDM>

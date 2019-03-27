@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="TestPagePageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="GehaltJobsNation1" RangeSize="-1" DataControl="AppModuleDataControl"
+              id="GehaltJobsNation1Iterator"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="GehaltJobsNation1Iterator" id="GehaltJobsNation1" ChangeEventPolicy="ppr">
+      <nodeDefinition DefName="model.queries.GehaltJobsNation" Name="GehaltJobsNation1">
+        <AttrNames>
+          <Item Value="Salary"/>
+          <Item Value="City"/>
+          <Item Value="DepartmentName"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>

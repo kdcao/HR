@@ -1,0 +1,9 @@
+<?xml version = '1.0' standalone = 'yes' ?>
+<ojdeploy-build>
+  <deploy>
+    <parameter name="workspace" value="C:\Users\A92939692\Desktop\Daten\Workspace\HRSystem\HRSystem.jws"/>
+    <parameter name="profile" value="*"/>
+    <parameter name="nocompile" value="false"/>
+    <parameter name="outputfile" value="C:\Users\A92939692\Desktop\Daten\Workspace\HRSystem\deploy\${profile.name}"/>
+  </deploy>
+</ojdeploy-build>

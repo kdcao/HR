@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ojdeploy-log>
+  <deploy-task>
+    <target>
+      <profile>HRSystem_Project1_HRSystem</profile>
+      <workspace>/C:/Users/A92939692/Desktop/Daten/Workspace/HRSystem/HRSystem.jws</workspace>
+    </target>
+    <status exitcode="0">SUCCESS</status>
+  </deploy-task>
+  <summary>
+    <start-time>2019-03-27 10:12:22 CET</start-time>
+    <end-time>2019-03-27 10:12:33 CET</end-time>
+    <total-tasks>1</total-tasks>
+    <failures>0</failures>
+    <status exitcode="0">SUCCESS</status>
+  </summary>
+</ojdeploy-log>
